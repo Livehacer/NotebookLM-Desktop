@@ -3,7 +3,8 @@ export type SupportedFileType =
   | 'txt'
   | 'md'
   | 'docx'
-  | 'epub';
+  | 'epub'
+  | 'fb2';
 
 export function detectFileType(fileName: string): SupportedFileType | null {
   const ext = fileName.toLowerCase().split('.').pop();
@@ -20,6 +21,8 @@ export function detectFileType(fileName: string): SupportedFileType | null {
       return 'docx';
     case 'epub':
       return 'epub';
+    case 'fb2':
+      return 'fb2';
     default:
       return null;
   }
