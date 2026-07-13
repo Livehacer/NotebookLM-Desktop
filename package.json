@@ -1,0 +1,21 @@
+{
+  "name": "notebooklm-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial NotebookLM Desktop client",
+  "main": "dist/main/main.js",
+  "author": "Livehacer",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^36.0.0",
+    "electron-builder": "^25.0.0",
+    "typescript": "^5.8.0"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.0"
+  }
+}
